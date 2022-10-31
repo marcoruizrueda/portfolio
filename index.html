@@ -27,6 +27,9 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- Slider Photo -->
+  <link rel="stylesheet" href="assets/css/slider.css">
+
   <!-- =======================================================
   * Template Name: iPortfolio - v1.5.1
   * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
@@ -43,8 +46,9 @@
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="d-flex flex-column">
+      
       <div class="profile">
-        <img src="assets/img/profile-marcoreis.jpeg" alt="" class="img-fluid rounded-circle">
+        <img src="assets/img/marco_main_profile.jpeg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Marco A.</a></h1>
         <h1 class="text-light"><a href="index.html">Computer Vision & ML</a></h1>
 
@@ -57,15 +61,15 @@
           <a href="https://www.youtube.com/user/MarcoReis15/videos" class="youtube"  target="_blank"><i class="bx bxl-youtube"></i></a>
         </div>
       </div>
-      <nav class="nav-menu">
+      <nav  id="navbar" class="nav-menu navbar">
         <ul>
           <!--li class="active"><a href="https://mhar-vell.github.io/portfolio/index.html"></a></li-->
-          <li><a href="#hero"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about"><i class="bx bx-user"></i> <span>About me</span></a></li>
-          <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio"><i class="bx bx-book-content"></i>Projects</a></li>
-          <li><a href="#services"><i class="bx bx-server"></i>Research Lines</a></li>
-          <li><a href="#contact"><i class="bx bx-mail-send"></i>Contact</a></li>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About me</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>Projects</a></li>
+          <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i>Research Lines</a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-mail-send"></i>Contact</a></li>
         </ul>
       </nav><!-- .nav-menu -->
       <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
@@ -93,7 +97,17 @@
 
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/marco-pxArt-removebg-preview.png" class="img-fluid" alt="">
+            
+            <div class='container_slider'>
+              <div class='img background-img'></div>
+              <div class='img foreground-img'></div>
+              <input type="range" min="1" max="100" value="50" class="slider" name='slider' id="slider">
+              <div class='slider-button'></div>
+            </div>
+            <div style="text-align: center;"><small>Image with Elephant DNA + effects</small></div>
+              
+           <!--<img src="assets/img/marco-pxArt-removebg-preview.gif" class="img-fluid" alt="">-->
+
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <h3>Sr. Computer Vision &amp; AI Research Engineer</h3>
@@ -837,7 +851,7 @@
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-row">
+              <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
                   <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -909,6 +923,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Slider Photo -->
+  <script  src="assets/js/slider.js"></script>
 
 </body>
 
